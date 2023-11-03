@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="background-image">
+        <div class="container">
+            <h1>Password Strength Checker</h1>
+            <form action="{{ url_for('password_strength') }}" method="POST">
+                <label for="password">Enter a password:(min 8 characters)</label>
+                <input type="password" name="password" id="password" required>
+                <button type="submit">Check Strength</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

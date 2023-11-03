@@ -1,0 +1,91 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+/* Set global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333333;
+}
+
+input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555555;
+}
+
+.password-info,
+.strength-info {
+    margin-bottom: 20px;
+}
+
+.checklist {
+    text-align: left;
+}
+
+.checklist-heading {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.checklist-item {
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.checklist-item.success::before {
+    content: "✔️";
+    color: #2ecc71;
+    margin-right: 10px;
+}
+
+.checklist-item.failure::before {
+    content: "❌";
+    color: #e74c3c;
+    margin-right: 10px;
+}
